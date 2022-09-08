@@ -12,6 +12,12 @@
     <title>My Todo</title>
 </head>
 <body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            {% include 'todo/includes/navigation.html' %}
+        </nav>
+    </header>
     {% include 'todo/includes/navigation.html' %}
     {% block content %}{% endblock%}
     <!-- JavaScript Bundle with Popper -->

@@ -1,5 +1,9 @@
 from django.shortcuts import render
+from .models import Todo
 
 
-def home(request):
-    return render(request, 'todo/base.html')
+def index(request):
+    context = {
+        'todo_list': Todo.objects.all(),
+    }
+    return render(request, 'todo/index.html', context=context)
