@@ -1,0 +1,36 @@
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo p {
+    margin-top: 20%;
+}
+.form {
+    max-width: 70%;
+    margin: 10% auto;
+}
+
+.form_items {
+    margin: 0 auto;
+}
+
+.row_add {
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.btn_margin {
+    margin-left: 10px;
+}
+
+.todo_card {
+    margin: 0 auto;
+}
+
+.todo_header {
+    text-align: center;
+}

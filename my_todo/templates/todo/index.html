@@ -1,6 +1,24 @@
 {% extends 'todo/base.html' %}
+{% load static %}
 {% block content %}
-    {% for todo in todo_list%}
-        <p>{{ todo.title }}</p>
-    {% endfor%}
+    <div class="todo">
+        <form class="form">
+            <div class="mb-3 form_items">
+                <div class="row_add">
+                    <input type="text" class="form-control" placeholder="Введите текст">
+                    <button type="submit" class="btn btn-primary btn_margin">Добавить</button>
+                </div>
+              </div>
+        </form>
+            {% for todo in todo_list%}
+            <div class="card text-bg-light mb-3 todo_card" style="max-width: 31rem;">
+                <div class="card-header">
+                    <h4 class="todo_header">{{ todo.title }}</h4>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ todo.description }}</p>
+                </div>
+            </div>
+            {% endfor%}
+    </div>
 {% endblock %}
