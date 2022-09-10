@@ -1,9 +1,11 @@
+from operator import mod
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class Todo(models.Model):
-
     title = models.CharField(max_length=100,
                              verbose_name='Название задачи')
     description = models.CharField(max_length=250,
@@ -14,3 +16,5 @@ class Todo(models.Model):
                                       verbose_name='Дата публикации')
     update_at = models.DateTimeField(auto_now=True,
                                      verbose_name='Обновлено')
+    date_duo = models.DateTimeField()
+    status = models.BooleanField()
