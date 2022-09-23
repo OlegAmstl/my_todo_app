@@ -16,7 +16,8 @@
     <header class="container">
         <div class="header_wrap">
             <div class="logo">
-                <p>LOGO</p>
+                <p class="header-logo">LOGO</p>
+                <a class="header-logo" href="{% url 'todo:index' %}">LOGO</a>
             </div>
             <nav class="navbar navbar-expand-lg bg-light">
                 {% include 'todo/includes/navigation.html' %}

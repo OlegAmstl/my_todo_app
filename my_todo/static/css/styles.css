@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-between;
 }
-
 .logo p {
+    display: block;
     margin-top: 20%;
+    text-decoration: none;
+    color: gray;
 }
 .form {
     max-width: 70%;
